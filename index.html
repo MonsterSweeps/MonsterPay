@@ -17,7 +17,88 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://monsterpay.net/og.png">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="author" content="Monster Tech Inc.">
+<meta property="og:image:alt" content="MonsterPay — one system for pay-ins and pay-outs across Google Pay, Apple Pay, Chime, ACH, PayPal, Venmo, Cash App and Zelle.">
+<meta property="og:locale" content="en_US">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://monsterpay.net/#org",
+      "name": "MonsterPay",
+      "legalName": "Monster Tech Inc.",
+      "url": "https://monsterpay.net/",
+      "logo": "https://monsterpay.net/icon-512.png",
+      "description": "Multi-channel payment gateway for pay-ins and pay-outs, with a white-label platform for distribution partners.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "email": "sales@monsters.win",
+        "availableLanguage": "English"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://monsterpay.net/#site",
+      "url": "https://monsterpay.net/",
+      "name": "MonsterPay",
+      "publisher": { "@id": "https://monsterpay.net/#org" },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Service",
+      "name": "MonsterPay payment gateway",
+      "provider": { "@id": "https://monsterpay.net/#org" },
+      "serviceType": "Payment gateway",
+      "description": "Pay-ins and pay-outs through payment links or a REST API, with merchant and reseller accounts on one multi-tenant platform.",
+      "areaServed": "US"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which payment methods are live right now?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Customers pay in with Google Pay, Apple Pay or Chime. Settlement goes out to an ACH bank account, PayPal, Venmo, Cash App, Zelle, Chime or a debit card. Crypto is on the roadmap and is not live yet." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a website or developers to start?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Neither. Create a payment link with a title and an amount, share it, and you are collecting. For resellers we build the branded platform and hand over the login. API keys, webhooks and documentation come later, only if you want to build your own gateway on top." }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are the checkout amounts fixed?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The checkout accepts a set list of amounts from $9.99 up to $199.99. That is a constraint of the rails MonsterPay runs on today rather than a design choice." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can the platform carry my branding?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Merchants get their logo and accent colour on the checkout their customers see. Resellers get brand name, logo, colour, their own address at yourcompany.monsterpay.net, their own support email, and the option to remove any mention of MonsterPay from the panel and the checkout." }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does onboarding take?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Fast, because there is nothing for the partner to configure. MonsterPay sets up the branded platform at yourcompany.monsterpay.net and hands over the login. A merchant onboarded under an existing reseller takes about a minute." }
+        },
+        {
+          "@type": "Question",
+          "name": "What do I need ready before I contact you?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Your business and vertical, expected monthly volume, which methods you need, and whether you are processing yourself or reselling." }
+        }
+      ]
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">

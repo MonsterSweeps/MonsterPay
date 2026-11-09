@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Reseller subdomains are private panels, not public pages.
+Disallow: /brand/
+
+Sitemap: https://monsterpay.net/sitemap.xml
